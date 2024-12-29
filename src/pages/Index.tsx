@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Code, Laptop, Smartphone } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -22,7 +22,7 @@ const Index = () => {
               </span>
             </h1>
             <p className="text-lg sm:text-xl text-secondary/80 max-w-3xl mx-auto mb-8">
-              Transforming Ideas into Stunning Websites and Applications
+              Transforming Ideas into Stunning Websites, Applications, and Software Solutions
             </p>
             <Link
               to="/contact"
@@ -49,10 +49,9 @@ const Index = () => {
               About Us
             </h2>
             <p className="text-lg text-secondary/80 mb-8">
-              At SYZA Tech, we specialize in delivering high-quality software
-              solutions tailored to your business needs. Our focus is on creating
-              visually appealing and functional websites and applications that
-              exceed client expectations.
+              At SYZA Tech, we specialize in delivering high-quality software solutions tailored to your business needs. 
+              Our focus is on creating visually appealing and functional websites, applications, and software services 
+              that exceed client expectations.
             </p>
             <Link
               to="/about"
@@ -83,17 +82,25 @@ const Index = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
+                icon: <Laptop className="w-12 h-12 mb-4 text-primary" />,
                 title: "Website Development",
                 description:
                   "We design and develop custom websites that reflect your brand identity and engage your audience.",
               },
               {
+                icon: <Smartphone className="w-12 h-12 mb-4 text-primary" />,
                 title: "App Development",
                 description:
                   "From concept to launch, we create mobile applications that captivate users and drive results.",
+              },
+              {
+                icon: <Code className="w-12 h-12 mb-4 text-primary" />,
+                title: "Software Solutions",
+                description:
+                  "We develop custom software solutions tailored to your business needs, helping you streamline operations and boost efficiency.",
               },
             ].map((service, index) => (
               <motion.div
@@ -104,6 +111,7 @@ const Index = () => {
                 viewport={{ once: true }}
                 className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow"
               >
+                {service.icon}
                 <h3 className="text-xl font-bold text-secondary mb-4">
                   {service.title}
                 </h3>
