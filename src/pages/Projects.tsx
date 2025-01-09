@@ -16,11 +16,12 @@ const Projects = () => {
             Our Projects
           </h1>
           <p className="text-lg text-secondary/80 max-w-3xl mx-auto">
-            Explore our portfolio of innovative solutions and successful implementations
+            Explore our portfolio of innovative solutions and successful projects that
+            demonstrate our expertise and commitment to excellence.
           </p>
         </motion.div>
 
-        <div className="space-y-12 mb-20">
+        <div className="grid md:grid-cols-2 gap-8 mb-20">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}

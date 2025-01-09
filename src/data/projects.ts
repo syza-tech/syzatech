@@ -3,21 +3,15 @@ import { Project } from "@/components/ProjectCard";
 export const projects: Project[] = [
   {
     title: "Manager Saab",
-    description: "A comprehensive management platform built with React and modern web technologies. Features include user authentication, dynamic dashboards, and responsive design for seamless management across devices.",
+    description: "A comprehensive management application built with React and TypeScript, featuring dynamic task management and real-time updates.",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Shadcn/UI"],
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Shadcn UI"],
     link: "https://managersaab.lovable.app"
   },
   {
-    title: "Healthcare Management System",
-    description: "A comprehensive healthcare management system that streamlines patient records, appointments, and billing processes.",
+    title: "SYZA Tech Website",
+    description: "A modern, responsive website built with React and TypeScript, showcasing our services and expertise in web development.",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    technologies: ["React", "TypeScript", "Express", "PostgreSQL"],
-  },
-  {
-    title: "Real Estate Platform",
-    description: "A feature-rich real estate platform with virtual tours, property management, and automated scheduling system.",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-    technologies: ["Next.js", "Prisma", "AWS", "TailwindCSS"],
-  },
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+  }
 ];

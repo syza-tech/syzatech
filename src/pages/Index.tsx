@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Code, Laptop, Smartphone } from "lucide-react";
 import { Link } from "react-router-dom";
-import ProjectShowcase from "@/components/ProjectShowcase";
 
 const Index = () => {
   return (
@@ -129,9 +128,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Project Showcase Section */}
-      <ProjectShowcase />
 
       {/* Call to Action */}
       <section className="py-20 bg-primary text-white">
