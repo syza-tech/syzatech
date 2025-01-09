@@ -1,6 +1,14 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Code, Laptop, Smartphone } from "lucide-react";
 import { Link } from "react-router-dom";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
 
 const Index = () => {
   return (
@@ -126,6 +134,87 @@ const Index = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Project Showcase */}
+      <section className="py-20 bg-muted">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl sm:text-4xl font-bold text-secondary mb-4">
+              Featured Projects
+            </h2>
+            <p className="text-lg text-secondary/80">
+              Explore some of our recent work
+            </p>
+          </motion.div>
+
+          <Carousel className="max-w-5xl mx-auto">
+            <CarouselContent>
+              {[
+                {
+                  title: "E-Commerce Platform",
+                  description: "A modern e-commerce solution built with React and Node.js, featuring real-time inventory management and secure payment processing.",
+                  image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+                  technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+                },
+                {
+                  title: "Healthcare Management System",
+                  description: "A comprehensive healthcare management system that streamlines patient records, appointments, and billing processes.",
+                  image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+                  technologies: ["React", "TypeScript", "Express", "PostgreSQL"],
+                },
+                {
+                  title: "Real Estate Platform",
+                  description: "A feature-rich real estate platform with virtual tours, property management, and automated scheduling system.",
+                  image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+                  technologies: ["Next.js", "Prisma", "AWS", "TailwindCSS"],
+                },
+              ].map((project, index) => (
+                <CarouselItem key={index}>
+                  <Card className="border-none shadow-lg">
+                    <CardContent className="p-6">
+                      <div className="grid md:grid-cols-2 gap-6">
+                        <div className="relative h-[300px] overflow-hidden rounded-lg">
+                          <img
+                            src={project.image}
+                            alt={project.title}
+                            className="absolute inset-0 w-full h-full object-cover"
+                          />
+                        </div>
+                        <div className="flex flex-col justify-center">
+                          <h3 className="text-2xl font-bold text-secondary mb-4">
+                            {project.title}
+                          </h3>
+                          <p className="text-secondary/80 mb-4">
+                            {project.description}
+                          </p>
+                          <div className="flex flex-wrap gap-2">
+                            {project.technologies.map((tech) => (
+                              <span
+                                key={tech}
+                                className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm"
+                              >
+                                {tech}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </section>
 
