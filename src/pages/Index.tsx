@@ -159,10 +159,11 @@ const Index = () => {
             <CarouselContent>
               {[
                 {
-                  title: "E-Commerce Platform",
-                  description: "A modern e-commerce solution built with React and Node.js, featuring real-time inventory management and secure payment processing.",
+                  title: "Manager Saab",
+                  description: "A comprehensive management platform built with React and modern web technologies. Features include user authentication, dynamic dashboards, and responsive design for seamless management across devices.",
                   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-                  technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+                  technologies: ["React", "TypeScript", "Tailwind CSS", "Shadcn/UI"],
+                  link: "https://managersaab.lovable.app"
                 },
                 {
                   title: "Healthcare Management System",
@@ -195,7 +196,7 @@ const Index = () => {
                           <p className="text-secondary/80 mb-4">
                             {project.description}
                           </p>
-                          <div className="flex flex-wrap gap-2">
+                          <div className="flex flex-wrap gap-2 mb-4">
                             {project.technologies.map((tech) => (
                               <span
                                 key={tech}
@@ -205,6 +206,17 @@ const Index = () => {
                               </span>
                             ))}
                           </div>
+                          {project.link && (
+                            <a
+                              href={project.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center text-primary hover:text-primary/80 transition-colors group"
+                            >
+                              Visit Project
+                              <ArrowRight className="ml-1 group-hover:translate-x-1 transition-transform" />
+                            </a>
+                          )}
                         </div>
                       </div>
                     </CardContent>
