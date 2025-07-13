@@ -23,13 +23,6 @@ const Contact = () => {
       value: "syzatech2025@gmail.com",
       description: "Send us your requirements and we'll respond within 24 hours",
       href: "mailto:syzatech2025@gmail.com"
-    },
-    {
-      icon: Globe,
-      title: "Visit Our Website",
-      value: "syzatech.onrender.com",
-      description: "Explore our work and learn more about our services",
-      href: "https://syzatech.onrender.com"
     }
   ];
 
