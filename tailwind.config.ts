@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				inter: ['Inter', 'sans-serif'],
+				mono: ['JetBrains Mono', 'monospace'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -53,33 +57,35 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Futuristic Color Palette
-				cyber: {
-					blue: 'hsl(var(--cyber-blue))',
-					'blue-dark': 'hsl(var(--cyber-blue-dark))',
-					'blue-light': 'hsl(var(--cyber-blue-light))'
+				// Modern Vibrant Palette
+				teal: {
+					bright: 'hsl(var(--teal-bright))',
+					light: 'hsl(var(--teal-light))',
+					dark: 'hsl(var(--teal-dark))'
 				},
-				neon: {
-					purple: 'hsl(var(--neon-purple))',
-					'purple-dark': 'hsl(var(--neon-purple-dark))',
-					'purple-light': 'hsl(var(--neon-purple-light))'
+				blue: {
+					electric: 'hsl(var(--blue-electric))',
+					deep: 'hsl(var(--blue-deep))',
+					light: 'hsl(var(--blue-light))'
 				},
-				electric: {
-					emerald: 'hsl(var(--electric-emerald))',
-					'emerald-light': 'hsl(var(--electric-emerald-light))',
-					'emerald-dark': 'hsl(var(--electric-emerald-dark))'
+				orange: {
+					warm: 'hsl(var(--orange-warm))',
+					light: 'hsl(var(--orange-light))',
+					dark: 'hsl(var(--orange-dark))'
 				},
-				space: {
-					gray: 'hsl(var(--space-gray))',
-					'gray-light': 'hsl(var(--space-gray-light))',
-					'gray-dark': 'hsl(var(--space-gray-dark))'
+				purple: {
+					vibrant: 'hsl(var(--purple-vibrant))',
+					light: 'hsl(var(--purple-light))',
+					dark: 'hsl(var(--purple-dark))'
 				},
-				matrix: {
-					green: 'hsl(var(--matrix-green))'
+				gray: {
+					modern: 'hsl(var(--gray-modern))',
+					light: 'hsl(var(--gray-light))',
+					dark: 'hsl(var(--gray-dark))'
 				},
-				hologram: {
-					cyan: 'hsl(var(--hologram-cyan))'
-				},
+				success: 'hsl(var(--success))',
+				warning: 'hsl(var(--warning))',
+				info: 'hsl(var(--info))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -92,19 +98,20 @@ export default {
 				}
 			},
 			backgroundImage: {
-				'gradient-cyber': 'var(--gradient-cyber)',
-				'gradient-matrix': 'var(--gradient-matrix)',
-				'gradient-hologram': 'var(--gradient-hologram)',
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-secondary': 'var(--gradient-secondary)',
+				'gradient-accent': 'var(--gradient-accent)',
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-card': 'var(--gradient-card)',
-				'gradient-accent': 'var(--gradient-accent)'
+				'gradient-modern': 'var(--gradient-modern)'
 			},
 			boxShadow: {
-				'cyber': 'var(--shadow-cyber)',
-				'neon': 'var(--shadow-neon)',
-				'emerald': 'var(--shadow-emerald)',
-				'glow': 'var(--shadow-glow)',
-				'premium': 'var(--shadow-premium)'
+				'soft': 'var(--shadow-soft)',
+				'medium': 'var(--shadow-medium)',
+				'large': 'var(--shadow-large)',
+				'teal': 'var(--shadow-teal)',
+				'blue': 'var(--shadow-blue)',
+				'orange': 'var(--shadow-orange)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)'
