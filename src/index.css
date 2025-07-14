@@ -6,85 +6,59 @@
 
 @layer base {
   :root {
-    /* Modern Base - Clean and Bright */
     --background: 0 0% 100%;
-    --foreground: 215 25% 15%;
+    --foreground: 260 15% 15%;
 
-    /* Cards - Subtle Elevation */
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card-foreground: 260 15% 15%;
 
-    /* Popovers */
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover-foreground: 260 15% 15%;
 
-    /* Primary - Vibrant Teal */
-    --primary: 189 94% 43%;
+    /* Sunset Primary Colors */
+    --primary: 280 85% 60%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 189 94% 55%;
+    --primary-glow: 280 85% 70%;
 
-    /* Secondary - Electric Blue */
-    --secondary: 217 91% 60%;
+    /* Sunset Secondary Colors */
+    --secondary: 320 75% 65%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Accent - Warm Orange */
-    --accent: 24 100% 58%;
-    --accent-foreground: 0 0% 100%;
+    /* Sunset Accent Colors */
+    --accent: 45 95% 70%;
+    --accent-foreground: 260 15% 15%;
 
-    /* Muted - Soft Gray */
-    --muted: 210 40% 98%;
-    --muted-foreground: 215 16% 47%;
+    /* Muted Colors */
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
 
-    /* Destructive - Coral Red */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Borders and Inputs */
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 189 94% 43%;
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 280 85% 60%;
 
-    /* Success, Warning, Info */
-    --success: 160 84% 39%;
-    --warning: 45 93% 58%;
-    --info: 217 91% 60%;
+    /* Sunset Gradient Colors */
+    --gradient-start: 45 95% 70%;
+    --gradient-middle: 320 75% 65%;
+    --gradient-end: 280 85% 60%;
+    
+    /* Sunset Theme Colors */
+    --sunset-orange: 25 95% 70%;
+    --sunset-pink: 320 75% 65%;
+    --sunset-purple: 280 85% 60%;
+    --sunset-blue: 240 80% 65%;
+    --sunset-yellow: 45 95% 70%;
 
-    /* Modern Color Palette - All HSL */
-    --teal-bright: 189 94% 43%;
-    --teal-light: 189 94% 55%;
-    --teal-dark: 189 94% 35%;
+    /* Custom Gradients */
+    --gradient-sunset: linear-gradient(135deg, hsl(var(--sunset-yellow)), hsl(var(--sunset-orange)), hsl(var(--sunset-pink)), hsl(var(--sunset-purple)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--sunset-purple)), hsl(var(--sunset-pink)));
+    --gradient-card: linear-gradient(135deg, hsl(var(--sunset-pink) / 0.1), hsl(var(--sunset-purple) / 0.1));
     
-    --blue-electric: 217 91% 60%;
-    --blue-deep: 217 91% 40%;
-    --blue-light: 217 91% 75%;
-    
-    --orange-warm: 24 100% 58%;
-    --orange-light: 24 100% 70%;
-    --orange-dark: 24 100% 45%;
-    
-    --purple-vibrant: 271 81% 56%;
-    --purple-light: 271 81% 70%;
-    --purple-dark: 271 81% 40%;
-    
-    --gray-modern: 215 16% 47%;
-    --gray-light: 214 32% 91%;
-    --gray-dark: 215 25% 15%;
-
-    /* Vibrant Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(189 94% 43%), hsl(217 91% 60%));
-    --gradient-secondary: linear-gradient(135deg, hsl(24 100% 58%), hsl(24 100% 70%));
-    --gradient-accent: linear-gradient(135deg, hsl(271 81% 56%), hsl(217 91% 60%));
-    --gradient-hero: linear-gradient(135deg, hsl(189 94% 43%), hsl(217 91% 60%), hsl(271 81% 56%));
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.8), hsl(214 32% 91% / 0.3));
-    --gradient-modern: linear-gradient(135deg, hsl(189 94% 55% / 0.1), hsl(217 91% 75% / 0.1));
-    
-    /* Modern Shadows */
-    --shadow-soft: 0 4px 6px -1px hsl(215 25% 15% / 0.1), 0 2px 4px -1px hsl(215 25% 15% / 0.06);
-    --shadow-medium: 0 10px 15px -3px hsl(215 25% 15% / 0.1), 0 4px 6px -2px hsl(215 25% 15% / 0.05);
-    --shadow-large: 0 25px 50px -12px hsl(215 25% 15% / 0.25);
-    --shadow-teal: 0 8px 25px hsl(189 94% 43% / 0.15);
-    --shadow-blue: 0 8px 25px hsl(217 91% 60% / 0.15);
-    --shadow-orange: 0 8px 25px hsl(24 100% 58% / 0.15);
+    /* Shadows */
+    --shadow-sunset: 0 10px 40px hsl(var(--sunset-purple) / 0.3);
+    --shadow-glow: 0 0 30px hsl(var(--sunset-pink) / 0.4);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -109,43 +83,41 @@
   }
 
   .dark {
-    /* Dark Mode - Rich Navy */
-    --background: 215 28% 9%;
+    --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
 
-    --card: 215 28% 12%;
+    --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 215 28% 12%;
+    --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 189 94% 55%;
-    --primary-foreground: 215 28% 9%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 217 91% 65%;
-    --secondary-foreground: 215 28% 9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 215 28% 15%;
-    --muted-foreground: 217 9% 65%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 24 100% 65%;
-    --accent-foreground: 215 28% 9%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 215 28% 18%;
-    --input: 215 28% 15%;
-    --ring: 189 94% 55%;
-    
-    --sidebar-background: 215 28% 9%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 189 94% 55%;
-    --sidebar-primary-foreground: 215 28% 9%;
-    --sidebar-accent: 215 28% 15%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 215 28% 18%;
-    --sidebar-ring: 189 94% 55%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -155,6 +127,6 @@
   }
 
   body {
-    @apply bg-background text-foreground font-inter antialiased;
+    @apply bg-background text-foreground;
   }
 }
