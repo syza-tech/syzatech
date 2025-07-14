@@ -53,14 +53,32 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				emerald: {
-					light: 'hsl(var(--emerald-light))',
-					base: 'hsl(var(--emerald-base))',
-					dark: 'hsl(var(--emerald-dark))'
+				// Futuristic Color Palette
+				cyber: {
+					blue: 'hsl(var(--cyber-blue))',
+					'blue-dark': 'hsl(var(--cyber-blue-dark))',
+					'blue-light': 'hsl(var(--cyber-blue-light))'
 				},
-				black: {
-					light: 'hsl(var(--black-light))',
-					base: 'hsl(var(--black-base))'
+				neon: {
+					purple: 'hsl(var(--neon-purple))',
+					'purple-dark': 'hsl(var(--neon-purple-dark))',
+					'purple-light': 'hsl(var(--neon-purple-light))'
+				},
+				electric: {
+					emerald: 'hsl(var(--electric-emerald))',
+					'emerald-light': 'hsl(var(--electric-emerald-light))',
+					'emerald-dark': 'hsl(var(--electric-emerald-dark))'
+				},
+				space: {
+					gray: 'hsl(var(--space-gray))',
+					'gray-light': 'hsl(var(--space-gray-light))',
+					'gray-dark': 'hsl(var(--space-gray-dark))'
+				},
+				matrix: {
+					green: 'hsl(var(--matrix-green))'
+				},
+				hologram: {
+					cyan: 'hsl(var(--hologram-cyan))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -74,13 +92,19 @@ export default {
 				}
 			},
 			backgroundImage: {
-				'gradient-sunset': 'var(--gradient-sunset)',
+				'gradient-cyber': 'var(--gradient-cyber)',
+				'gradient-matrix': 'var(--gradient-matrix)',
+				'gradient-hologram': 'var(--gradient-hologram)',
 				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-card': 'var(--gradient-card)'
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-accent': 'var(--gradient-accent)'
 			},
 			boxShadow: {
-				'sunset': 'var(--shadow-sunset)',
-				'glow': 'var(--shadow-glow)'
+				'cyber': 'var(--shadow-cyber)',
+				'neon': 'var(--shadow-neon)',
+				'emerald': 'var(--shadow-emerald)',
+				'glow': 'var(--shadow-glow)',
+				'premium': 'var(--shadow-premium)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)'
