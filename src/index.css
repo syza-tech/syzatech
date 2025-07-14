@@ -15,18 +15,18 @@
     --popover: 0 0% 100%;
     --popover-foreground: 260 15% 15%;
 
-    /* Emerald Primary Colors */
-    --primary: 160 84% 39%;
+    /* Sunset Primary Colors */
+    --primary: 280 85% 60%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 160 84% 49%;
+    --primary-glow: 280 85% 70%;
 
-    /* Black Secondary Colors */
-    --secondary: 0 0% 9%;
+    /* Sunset Secondary Colors */
+    --secondary: 320 75% 65%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Emerald Accent Colors */
-    --accent: 160 84% 49%;
-    --accent-foreground: 0 0% 100%;
+    /* Sunset Accent Colors */
+    --accent: 45 95% 70%;
+    --accent-foreground: 260 15% 15%;
 
     /* Muted Colors */
     --muted: 240 5% 96%;
@@ -37,28 +37,28 @@
 
     --border: 240 6% 90%;
     --input: 240 6% 90%;
-    --ring: 160 84% 39%;
+    --ring: 280 85% 60%;
 
-    /* Emerald Gradient Colors */
-    --gradient-start: 160 84% 49%;
-    --gradient-middle: 160 84% 39%;
-    --gradient-end: 0 0% 9%;
+    /* Sunset Gradient Colors */
+    --gradient-start: 45 95% 70%;
+    --gradient-middle: 320 75% 65%;
+    --gradient-end: 280 85% 60%;
     
-    /* Emerald Theme Colors */
-    --emerald-light: 160 84% 59%;
-    --emerald-base: 160 84% 49%;
-    --emerald-dark: 160 84% 39%;
-    --black-light: 0 0% 20%;
-    --black-base: 0 0% 9%;
+    /* Sunset Theme Colors */
+    --sunset-orange: 25 95% 70%;
+    --sunset-pink: 320 75% 65%;
+    --sunset-purple: 280 85% 60%;
+    --sunset-blue: 240 80% 65%;
+    --sunset-yellow: 45 95% 70%;
 
     /* Custom Gradients */
-    --gradient-sunset: linear-gradient(135deg, hsl(var(--emerald-light)), hsl(var(--emerald-base)), hsl(var(--emerald-dark)), hsl(var(--black-base)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--emerald-dark)), hsl(var(--black-base)));
-    --gradient-card: linear-gradient(135deg, hsl(var(--emerald-base) / 0.1), hsl(var(--black-base) / 0.1));
+    --gradient-sunset: linear-gradient(135deg, hsl(var(--sunset-yellow)), hsl(var(--sunset-orange)), hsl(var(--sunset-pink)), hsl(var(--sunset-purple)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--sunset-purple)), hsl(var(--sunset-pink)));
+    --gradient-card: linear-gradient(135deg, hsl(var(--sunset-pink) / 0.1), hsl(var(--sunset-purple) / 0.1));
     
     /* Shadows */
-    --shadow-sunset: 0 10px 40px hsl(var(--emerald-dark) / 0.3);
-    --shadow-glow: 0 0 30px hsl(var(--emerald-base) / 0.4);
+    --shadow-sunset: 0 10px 40px hsl(var(--sunset-purple) / 0.3);
+    --shadow-glow: 0 0 30px hsl(var(--sunset-pink) / 0.4);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
