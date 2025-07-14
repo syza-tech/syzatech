@@ -44,12 +44,12 @@
     --input: 214 32% 91%;
     --ring: 189 94% 43%;
 
-    /* Success - Emerald Green */
+    /* Success, Warning, Info */
     --success: 160 84% 39%;
     --warning: 45 93% 58%;
     --info: 217 91% 60%;
 
-    /* Modern Color Palette */
+    /* Modern Color Palette - All HSL */
     --teal-bright: 189 94% 43%;
     --teal-light: 189 94% 55%;
     --teal-dark: 189 94% 35%;
@@ -71,20 +71,20 @@
     --gray-dark: 215 25% 15%;
 
     /* Vibrant Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--teal-bright)), hsl(var(--blue-electric)));
-    --gradient-secondary: linear-gradient(135deg, hsl(var(--orange-warm)), hsl(var(--orange-light)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--purple-vibrant)), hsl(var(--blue-electric)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--teal-bright)), hsl(var(--blue-electric)), hsl(var(--purple-vibrant)));
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.8), hsl(var(--gray-light) / 0.3));
-    --gradient-modern: linear-gradient(135deg, hsl(var(--teal-light) / 0.1), hsl(var(--blue-light) / 0.1));
+    --gradient-primary: linear-gradient(135deg, hsl(189 94% 43%), hsl(217 91% 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(24 100% 58%), hsl(24 100% 70%));
+    --gradient-accent: linear-gradient(135deg, hsl(271 81% 56%), hsl(217 91% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(189 94% 43%), hsl(217 91% 60%), hsl(271 81% 56%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.8), hsl(214 32% 91% / 0.3));
+    --gradient-modern: linear-gradient(135deg, hsl(189 94% 55% / 0.1), hsl(217 91% 75% / 0.1));
     
     /* Modern Shadows */
     --shadow-soft: 0 4px 6px -1px hsl(215 25% 15% / 0.1), 0 2px 4px -1px hsl(215 25% 15% / 0.06);
     --shadow-medium: 0 10px 15px -3px hsl(215 25% 15% / 0.1), 0 4px 6px -2px hsl(215 25% 15% / 0.05);
     --shadow-large: 0 25px 50px -12px hsl(215 25% 15% / 0.25);
-    --shadow-teal: 0 8px 25px hsl(var(--teal-bright) / 0.15);
-    --shadow-blue: 0 8px 25px hsl(var(--blue-electric) / 0.15);
-    --shadow-orange: 0 8px 25px hsl(var(--orange-warm) / 0.15);
+    --shadow-teal: 0 8px 25px hsl(189 94% 43% / 0.15);
+    --shadow-blue: 0 8px 25px hsl(217 91% 60% / 0.15);
+    --shadow-orange: 0 8px 25px hsl(24 100% 58% / 0.15);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
